@@ -1,0 +1,6 @@
+//Receber ou enviar dados
+import axios from "axios";
+
+const api = axios.create({ baseURL: "https://pokeapi.co/api/v2/" });
+
+export default api;

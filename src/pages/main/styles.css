@@ -1,0 +1,72 @@
+/*Cor azul: rgb(54, 99, 173)*/
+.pokemons-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20 px;
+}
+
+.pokemons-list article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pokemons-list article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+} 
+
+.pokemons-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 203, 5);
+    background: none;
+    margin-top: 10px;
+    color: rgb(255, 203, 5);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.pokemons-list article a:hover{
+    background: rgb(255, 203, 5);
+    color: #fff
+}
+
+.pokemons-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pokemons-list .actions button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: rgb(54, 99, 173);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pokemons-list .actions button:hover {
+    opacity: 0.7;
+}
+
+.pokemons-list .actions button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.pokemons-list .actions button[disabled]:hover {
+    opacity: 0.5;
+}
